@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     // ------------------------------
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var labelForshowingAllUsers: UITextView!
     
     // MARK: CoreDta variables
     // ------------------------------
+    //context is the interface for the database
     var context:NSManagedObjectContext!
     
     override func viewDidLoad() {
@@ -48,9 +50,44 @@ class ViewController: UIViewController {
     // ----------------------------
     @IBAction func signupButtonPressed(_ sender: Any) {
         print("Signup button pressed!")
+        /*
+         Save users to the database
+         */
+        //1.create a new in the database
+        let name = User(context: context)
         
+        //S2.set properties
+        name.email = usernameField.text
+        name.password = passwordField.text
+        
+        // 3.Save object
+        do{
+            try self.context.save()
+        }catch{
+            print("Error occured while saving")
+        }
+        
+        //
         
     }
     
+    @IBAction func fetchButtonAction(_ sender: Any) {
+        let fetchRequest:NSFetchRequest<User> = User.fetchRequest()
+        
+        do{
+            var users = try self.context.fetch(fetchRequest)
+            print(users)
+            var textToDisplay :String = ""
+            var counter = 0
+            for user in users {
+                counter = counter + 1
+                textToDisplay += "User \(counter) info\n  Email: \(user.email!)\n  Password: \(user.password!)\n"
+            }
+            labelForshowingAllUsers.text = textToDisplay
+        }catch{
+            print("Error fetching from database")
+        }
+        
+    }
 }
 
