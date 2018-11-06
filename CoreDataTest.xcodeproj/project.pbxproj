@@ -13,6 +13,7 @@
 		9B53D8C22191C9E70090D64A /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B53D8C02191C9E70090D64A /* CoreDataTest.xcdatamodeld */; };
 		9B53D8C42191CA010090D64A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B53D8C32191CA010090D64A /* Assets.xcassets */; };
 		9B53D8C72191CA010090D64A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B53D8C52191CA010090D64A /* LaunchScreen.storyboard */; };
+		CE3425702192134800267A55 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34256F2192134800267A55 /* NotesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9B53D8C32191CA010090D64A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B53D8C62191CA010090D64A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B53D8C82191CA010090D64A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE34256F2192134800267A55 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9B53D8B82191C9E60090D64A /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				CE34256F2192134800267A55 /* NotesTableViewController.swift */,
 				9B53D8B92191C9E60090D64A /* AppDelegate.swift */,
 				9B53D8BB2191C9E60090D64A /* ViewController.swift */,
 				9B53D8BD2191C9E70090D64A /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B53D8BC2191C9E60090D64A /* ViewController.swift in Sources */,
+				CE3425702192134800267A55 /* NotesTableViewController.swift in Sources */,
 				9B53D8C22191C9E70090D64A /* CoreDataTest.xcdatamodeld in Sources */,
 				9B53D8BA2191C9E60090D64A /* AppDelegate.swift in Sources */,
 			);
