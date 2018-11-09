@@ -102,11 +102,7 @@
                             <outlet property="delegate" destination="0C5-ri-dvY" id="uki-sy-KH6"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="fkq-S0-0yf"/>
-                        <barButtonItem title="Item" id="5c3-Te-Ria"/>
-                        <barButtonItem title="Item" id="eyo-CO-sbb"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="FIp-Kv-8Sg">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="bc6-Be-Pmk">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Dl-cW-rGP">

@@ -72,6 +72,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fetchButtonAction(_ sender: Any) {
+        //This is the same as: SELECT 
         let fetchRequest:NSFetchRequest<User> = User.fetchRequest()
         
         do{
